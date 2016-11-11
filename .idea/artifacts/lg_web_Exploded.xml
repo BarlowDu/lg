@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lg-web Exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lg_web_Exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lg-web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

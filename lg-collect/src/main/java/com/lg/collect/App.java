@@ -30,7 +30,7 @@ public class App {
             System.out.println("Stored string in redis:: "+list.get(i));
         }*/
 
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         App app = context.getBean("app", App.class);
         app.run();
         context.close();

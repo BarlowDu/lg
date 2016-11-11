@@ -31,14 +31,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lg" target="1.5" />
-      <module name="lg-collect" target="1.5" />
-      <module name="lg-db" target="1.5" />
-      <module name="lg-model" target="1.5" />
-      <module name="lg-service" target="1.5" />
-      <module name="lg-utils" target="1.5" />
-      <module name="lg-web" target="1.5" />
-      <module name="untitled" target="1.5" />
+      <module name="lg" target="1.8" />
+      <module name="lg-collect" target="1.8" />
+      <module name="lg-db" target="1.8" />
+      <module name="lg-model" target="1.8" />
+      <module name="lg-service" target="1.8" />
+      <module name="lg-utils" target="1.8" />
+      <module name="lg-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
