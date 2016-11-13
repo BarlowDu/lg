@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lg-web:Web">
+    <output-path>$PROJECT_DIR$/out/artifacts/lg_web_Web</output-path>
+    <root id="archive" name="lg-web_Web.war">
+      <element id="artifact" artifact-name="lg-web:Web exploded" />
+    </root>
+  </artifact>
+</component>
