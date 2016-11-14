@@ -38,9 +38,9 @@ public class App {
 
     private void run() {
         try {
-            service.run();
+            service.ReadAll();
         } catch (Exception ex) {
-            System.out.println(ex.getStackTrace());
+            System.out.println(ex.toString());
         }
 
     }

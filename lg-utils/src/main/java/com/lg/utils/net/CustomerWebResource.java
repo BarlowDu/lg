@@ -48,15 +48,16 @@ public class CustomerWebResource {
         HttpPost request = new HttpPost(url);
         List<NameValuePair> params=new ArrayList<NameValuePair>();
         request.addHeader(null);
-        UrlEncodedFormEntity entity=new UrlEncodedFormEntity(params);
         for(Map.Entry<String, Object> kv :pairs.entrySet()){
             BasicNameValuePair p=new BasicNameValuePair(kv.getKey(),kv.getValue()==null?null:kv.getValue().toString());
             params.add(p);
         }
+        UrlEncodedFormEntity entity=new UrlEncodedFormEntity(params);
+        request.setEntity(entity);
+
         for(Map.Entry<String,String> header:headers.entrySet()){
             request.setHeader(header.getKey(),header.getValue());
         }
-        request.setEntity(entity);
         CloseableHttpResponse response = client.execute(request);
 
         try {
