@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * Created by dutc on 2016/11/9.
  */
 @Service("WriteService")
-public class LGElasticWriteService {
+public class LGWriteService {
     @Resource(name="redisWriteDao")
     private LGWriteDao dao;
 

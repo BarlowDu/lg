@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/lg-model/lg-model.iml" filepath="$PROJECT_DIR$/lg-model/lg-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/lg-service/lg-service.iml" filepath="$PROJECT_DIR$/lg-service/lg-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/lg-utils/lg-utils.iml" filepath="$PROJECT_DIR$/lg-utils/lg-utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lg-web/lg-web.iml" filepath="$PROJECT_DIR$/lg-web/lg-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-website/lg-website.iml" filepath="$PROJECT_DIR$/lg-website/lg-website.iml" />
     </modules>
   </component>
 </project>

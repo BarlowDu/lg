@@ -1,6 +1,6 @@
 package com.lg.collect;
 
-import com.lg.service.LGElasticWriteService;
+import com.lg.service.LGWriteService;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @Component("app")
 public class App {
     @Resource(name = "WriteService")
-    private LGElasticWriteService service;
+    private LGWriteService service;
 
     public static void main(String[] args) {
         /*//连接本地的 Redis 服务
