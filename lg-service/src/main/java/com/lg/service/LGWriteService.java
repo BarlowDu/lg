@@ -38,7 +38,7 @@ public class LGWriteService {
         Set<Integer> pubId=new HashSet<Integer>();
         int pz=15;
         HashMap<String, Object> params = new HashMap<String, Object>();
-        params.put("first", true);
+        params.put("first", false);
         params.put("kd", "java");
         params.put("pn", 1);
         int total = getTotalPoisiton(params);
@@ -53,8 +53,8 @@ public class LGWriteService {
             if(model==null){
                 continue;
             }
-            for(PositionResult p:model.getContent().getPositionResult()){
-                PositionDetail item=p.getPosition();
+            for(PositionDetail item:model.getContent().getPositionResult().getResult()){
+                //PositionDetail item=p.getPosition();
                 handler.handle(item);
                 positionId.add(item.getPositionId());
                 pubId.add(item.getPublisherId());
@@ -73,7 +73,7 @@ public class LGWriteService {
     private int getTotalPoisiton(Map<String, Object> params) throws IOException {
         LagouModel model = CustomerWebResource.post(url, params,new HashMap<String, String>(), LagouModel.class);
 
-        return model.getContent().getTotalCount();
+        return model.getContent().getPositionResult().getTotalCount();
     }
 
     public void ReadAll(){

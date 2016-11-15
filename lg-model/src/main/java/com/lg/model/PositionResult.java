@@ -6,14 +6,25 @@ import java.util.List;
  * Created by dutc on 2016/11/8.
  */
 public class PositionResult {
-    private PositionDetail position;
+
+    private int totalCount;
+    private List<PositionDetail> result;
 
 
-    public PositionDetail getPosition() {
-        return position;
+    public List<PositionDetail> getResult() {
+        return result;
     }
 
-    public void setPosition(PositionDetail position) {
-        this.position = position;
+    public void setResult(List<PositionDetail> position) {
+        this.result = position;
+    }
+
+
+    public int getTotalCount() {
+        return totalCount;
+    }
+
+    public void setTotalCount(int totalCount) {
+        this.totalCount = totalCount;
     }
 }
