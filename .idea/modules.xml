@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lg.iml" filepath="$PROJECT_DIR$/lg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-collect/lg-collect.iml" filepath="$PROJECT_DIR$/lg-collect/lg-collect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-db/lg-db.iml" filepath="$PROJECT_DIR$/lg-db/lg-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-model/lg-model.iml" filepath="$PROJECT_DIR$/lg-model/lg-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-service/lg-service.iml" filepath="$PROJECT_DIR$/lg-service/lg-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-utils/lg-utils.iml" filepath="$PROJECT_DIR$/lg-utils/lg-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-web/lg-web.iml" filepath="$PROJECT_DIR$/lg-web/lg-web.iml" />
+    </modules>
+  </component>
+</project>
