@@ -8,19 +8,14 @@
     <artifactId>lg</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-
     <modules>
         <module>lg-model</module>
         <module>lg-db</module>
         <module>lg-collect</module>
         <module>lg-service</module>
         <module>lg-utils</module>
-        <module>lg-website</module>
+        <module>lg-web</module>
     </modules>
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -37,6 +32,17 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>4.3.3.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.3.3.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
             <version>4.3.3.RELEASE</version>
         </dependency>
 
