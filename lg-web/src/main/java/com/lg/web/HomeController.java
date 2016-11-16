@@ -15,15 +15,18 @@ import java.util.*;
  * Created by dutc on 2016/11/14.
  */
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/")
 public class HomeController {
     @Resource(name="reportService")
     LGReportService service;
 
-    @RequestMapping("/index")
-    public String index(){
-        System.out.print("index");
-        return "index";
+    @RequestMapping("/")
+    public ModelAndView index(){
+        ModelAndView result=new ModelAndView("index");
+        List<PositionDetail> list=service.getAllPosition();
+        result.addObject("data",list);
+        System.out.println(list.get(0).getPositionName());
+        return result;
     }
 
     @RequestMapping("/chart")

@@ -14,9 +14,11 @@
     <script src="<c:url value="/js/echarts.min.js"></c:url>"></script>
 </head>
 <body>
-<div style="height: 400px;">
-<div id="divEdu" style="width:500px;height:400px;float:left;"></div>
-<div id="divSalary" style="width:500px;height:400px;float:left;"></div>
+<div style="margin:auto 0;width:800px;" >
+    <div style="height: 400px;">
+        <div id="divEdu" style="width:500px;height:400px;float:left;"></div>
+        <div id="divSalary" style="width:500px;height:400px;float:left;"></div>
+    </div>
 </div>
 <script type="text/javascript">
     var option = {
@@ -60,10 +62,10 @@
 <script type="text/javascript">
     var optionSalary = {
         color: ['#3398DB'],
-        tooltip : {
+        tooltip: {
             trigger: 'axis',
-            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
             }
         },
         grid: {
@@ -72,24 +74,24 @@
             bottom: '3%',
             containLabel: true
         },
-        xAxis : [
+        xAxis: [
             {
-                type : 'category',
-                data : ${titlesSalary},
+                type: 'category',
+                data: ${titlesSalary},
                 axisTick: {
                     alignWithLabel: true
                 }
             }
         ],
-        yAxis : [
+        yAxis: [
             {
-                type : 'value'
+                type: 'value'
             }
         ],
-        series : [
+        series: [
             {
-                name:'直接访问',
-                type:'bar',
+                name: '直接访问',
+                type: 'bar',
                 barWidth: '60%',
                 data:${dataSalary}
             }
